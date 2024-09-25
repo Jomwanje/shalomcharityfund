@@ -1,0 +1,32 @@
+{% extends 'CharitySystem/head-foot-page.html' %}
+
+{% block content %}
+<div style="text-align: center;">
+    <div>
+        <br><br>
+        <div style="font-size: 15pt;">
+            <i class="fas fa-sign-out-alt fa-10x"></i>
+        </div>
+        <br><br>
+        <h2>You Have</h2>
+        <h2>Been</h2>
+        <h2>Logged Out</h2>
+        <h4>Thank You for Using Our Website</h4>
+        <br>
+        <h6>Please <a href="{% url 'login' %}" class="l">Click here</a> to log back in</h6>
+    </div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th style="border-right: 1px solid blue; padding:12px;"><a href="{% url 'home' %}" class="l2">Home</a></th>
+                <th style="border-right: 1px solid blue; padding:12px;"><a href="{% url 'about' %}" class="l2">About</a></th>
+{#                <!-- Uncomment this when the FAQ page is ready -->#}
+{#                <!-- <th style="border-right: 1px solid blue; padding:12px;"><a href="{% url 'faq' %}" class="l2">FAQ</a></th> -->#}
+                <th style="border-right: 1px solid blue; padding:12px;"><a href="{% url 'contact' %}" class="l2">Contact</a></th>
+            </tr>
+        </thead>
+    </table>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Charity Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Update this as needed -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Charity Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Mission</h2>
+        <p>We aim to connect donors with NGOs and make the donation process seamless.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Charity Management System</p>
+    </footer>
+</body>
+</html>

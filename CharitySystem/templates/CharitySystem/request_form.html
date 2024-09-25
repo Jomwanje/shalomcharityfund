@@ -1,0 +1,14 @@
+{% extends "CharitySystem/head-foot-page.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container mt-5 mb-5">
+    <h2>Request Funds</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-outline-info p-2" type="submit">Post Request</button>
+    </form>
+</div>
+
+{% endblock %}
