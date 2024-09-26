@@ -20,7 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'qtr#+i&ykuzxy1!_(a2jj4bah#mcgbw3m#40n47sw^klzksznp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,6 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'charity_management.urls'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 TEMPLATES = [
     {
@@ -144,4 +144,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'your_email@example.com'
 EMAIL_HOST_PASSWORD = 'your_password'  # Use an app password if necessary
-
