@@ -10,7 +10,7 @@ def signup(request):
         if new_form.is_valid():
             new_form.save()
             messages.success(request, f'Registration Completed')
-            return redirect('http://127.0.0.1:8000/')
+            return redirect('https://jomwanjegachui.pythonanywhere.com//')
     else:
         new_form = SignupForm()
 

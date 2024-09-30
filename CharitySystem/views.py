@@ -55,7 +55,7 @@ def verification_status_true(request, pk):
     send_mail(
         'SaathiHaathBadhana | Verification Status',
         'Our admins have deemed your verification to be correct.',
-        'your_email@example.com',
+        'jomwanjegachui@gmail.com',
         [ngo.email],  # Send to the NGO's email
         fail_silently=False,
     )
@@ -72,7 +72,7 @@ def verification_status_false(request, pk):
     send_mail(
         'SaathiHaathBadhana | Verification Status',
         'Our admins have deemed your verification to be incorrect.',
-        'your_email@example.com',
+        'jomwanjegachui@gmail.com',
         [ngo.email],  # Send to the NGO's email
         fail_silently=False,
     )

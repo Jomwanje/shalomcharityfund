@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'charity_management.urls'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 TEMPLATES = [
     {
@@ -129,6 +129,8 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'CharitySystem/media')
 

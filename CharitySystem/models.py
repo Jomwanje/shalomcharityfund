@@ -53,6 +53,7 @@ class FundRequest(models.Model):
 # Add methods to the NGO model
 class NGO(models.Model):
     # Existing fields...
+    objects = None
     name = models.CharField(max_length=255)
     email = models.EmailField()
     registration_number = models.CharField(max_length=255)
